@@ -34,4 +34,8 @@ while running:
     
     #running = False
 
-
+    if enemy.get_hp() == 0:
+        print(bcolors.OKGREEN + "YOU WIN!" + bcolors.ENDC)
+        running = False
+    elif player.get_hp() == 0:
+        print(bcolors.FAIL + "Your enemy has defeated you!" + bcolors.ENDC)
